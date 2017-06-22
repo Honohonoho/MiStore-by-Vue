@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <topBar></topBar>
   </div>
 </template>
 
 <script>
+import 'normalize.css/normalize.css'
+import './assets/reset.css'
+import TopBar from './components/TopBar'
+
 export default {
-  name: 'app'
+  components: {
+    'topBar': TopBar
+  }
 }
 </script>
 
