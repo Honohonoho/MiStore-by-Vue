@@ -55,7 +55,7 @@ export default {
     height: 40px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     >.topbar-nav{
       >ul{
