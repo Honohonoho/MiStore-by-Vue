@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  data: function(){
+  data (){
     return{
       navItems: [
         {'name': '小米商城'},
@@ -89,7 +89,10 @@ export default {
           padding: 0 .5em;
           border-right: 1px solid #424242;
           &:last-child{
-          border: none;
+            border: none;
+          }
+          &:nth-child(1){
+            padding-left: 0;
           }
           & a{
             color: #b0b0b0;
