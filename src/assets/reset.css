@@ -3,9 +3,16 @@
     padding: 0;
 }
 *::after,*::before {
-    box-sizing:border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+    list-style: none;
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC";
   height: 100%;
+  font-size: 12px;
 }
