@@ -141,6 +141,7 @@ export default {
       }
       >.cart-detail{
         position: absolute;
+        overflow: hidden;
         left: 120px;
         transform: translate(-100%,0);
         top: 40px;

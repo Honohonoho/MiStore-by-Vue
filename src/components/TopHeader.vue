@@ -5,7 +5,8 @@
       <a class="gif"></a>
       <div class="header-nav">
         <ul>
-          <li class="item" v-for="item in navItems">
+          <li class="item" v-for="item in navItems"
+              @mouseenter="navEnter">
             <a href="#">{{item.name}}</a>
           </li>
         </ul>
@@ -32,7 +33,9 @@
         </ul>
       </div>
     </div>
-    <headerMenu></headerMenu>  
+    <transition name="menu-expand">
+      <headerMenu v-show="isNavEnter" @mouseleave="navLeave"></headerMenu>
+    </transition>  
   </div>
 </template>
 
@@ -67,7 +70,8 @@ export default {
         {name: '配件优惠套装', number: '32'}
       ],
       isFocus: false,
-      isEnter: false
+      isEnter: false,
+      isNavEnter: false
     }
   },
   methods: {
@@ -86,6 +90,12 @@ export default {
     },
     searchLeave: function(){
       this.isEnter = false
+    },
+    navEnter: function(){
+      this.isNavEnter = true
+    },
+    navLeave: function(){
+      this.isNavEnter = false
     }
   },
   components: {
@@ -218,5 +228,14 @@ export default {
       }
     }
   }
+}
+//HeaderMenu动画
+.menu-expand-enter-active, .menu-expand-leave-active {
+  transition: height .3s ease;
+  height: 230px;
+}
+.menu-expand-enter,.menu-expand-leave-to/* .fade-leave-active in <2.1.8 */ {
+  height: 0;
+  transition: height .3s ease;
 }
 </style>
