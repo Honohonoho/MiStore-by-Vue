@@ -31,12 +31,14 @@
           </li>
         </ul>
       </div>
-    </div>  
+    </div>
+    <headerMenu></headerMenu>  
   </div>
 </template>
 
 <script>
 // import $ from 'jQuery'
+import HeaderMenu from './HeaderMenu'
 
 export default {
   data (){
@@ -85,6 +87,9 @@ export default {
     searchLeave: function(){
       this.isEnter = false
     }
+  },
+  components: {
+    'headerMenu': HeaderMenu
   }
 }
 </script>
@@ -92,9 +97,10 @@ export default {
 <style lang="scss" scoped>
 .top-header{
   width: 100%;
-  margin: 10px 0;
+  position: relative;
   >.container{
     width: 1226px;
+    height: 100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
