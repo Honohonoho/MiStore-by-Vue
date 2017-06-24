@@ -34,31 +34,26 @@ export default {
   data (){
     return{
       navItems: [
-        {'name': '小米商城'},
-        {'name': 'MIUI'},
-        {'name': '米聊'},
-        {'name': '游戏'},
-        {'name': '多看阅读'},
-        {'name': '云服务'},
-        {'name': '金融'},
-        {'name': '小米网移动版'},
-        {'name': '问题反馈'},
-        {'name': 'Select Region'},
+        {name: '小米商城'},
+        {name: 'MIUI'},
+        {name: '米聊'},
+        {name: '游戏'},
+        {name: '多看阅读'},
+        {name: '云服务'},
+        {name: '金融'},
+        {name: '小米网移动版'},
+        {name: '问题反馈'},
+        {name: 'Select Region'},
       ],
-      timer: '',
       cartStatus: false
     }
   },
   methods: {
     cartEnter: function(){
       this.cartStatus = true
-      clearInterval(this.timer)
     },
     cartOut: function(){
-      var self = this
-      this.timer = setTimeout(()=>{
-        self.cartStatus = false
-      }, 200)
+      this.cartStatus = false
     }
   },
   components: {

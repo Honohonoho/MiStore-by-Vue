@@ -10,34 +10,82 @@
           </li>
         </ul>
       </div>
-      <div class="header-search">
+      <div class="header-search"
+          @mouseenter="searchEnter"
+          @mouseleave="searchLeave">
         <form>
-          <input class="search-text" type="search" name="keyword">
-          <input class="search-btn" type="submit" value="">
+          <input class="search-text" type="search" 
+              @focus="inputFocus" @blur="inputBlur" 
+              :class="{'search-focus': isFocus,'search-enter': isEnter}"
+          >
+          <label class="search-btn" value="" 
+              :class="{'search-focus': isFocus,'search-enter': isEnter}"
+          >
+            <span class="icon"></span>
+          </label>
         </form>
+        <ul class="search-result" v-show="isFocus">
+          <li v-for="item in results">
+            <span class="item-name">{{item.name}}</span>
+            <span class="item-num">约有{{item.number}}件</span>
+          </li>
+        </ul>
       </div>
     </div>  
   </div>
 </template>
 
 <script>
+// import $ from 'jQuery'
+
 export default {
   data (){
     return {
       navItems: [
-        {'name': '小米手机'},
-        {'name': '红米'},
-        {'name': '平板·笔记本'},
-        {'name': '电视'},
-        {'name': '盒子·影音'},
-        {'name': '路由器'},
-        {'name': '智能硬件'},
-        {'name': '服务'},
-        {'name': '社区'},
-      ]
+        {name: '小米手机'},
+        {name: '红米'},
+        {name: '平板 · 笔记本'},
+        {name: '电视'},
+        {name: '盒子 · 影音'},
+        {name: '路由器'},
+        {name: '智能硬件'},
+        {name: '服务'},
+        {name: '社区'}
+      ],
+      results: [
+        {name: '小米手机5', number: '11'},
+        {name: '空气净化器2', number: '1'},
+        {name: '活塞耳机', number: '4'},
+        {name: '小米路由器', number: '8'},
+        {name: '移动电源', number: '21'},
+        {name: '运动相机', number: '3'},
+        {name: '小米摄像机', number: '2'},
+        {name: '小米体重秤', number: '1'},
+        {name: '小米插线板', number: '13'},
+        {name: '配件优惠套装', number: '32'}
+      ],
+      isFocus: false,
+      isEnter: false
     }
   },
-
+  methods: {
+    inputFocus: function(){
+      // $('.search-text,.search-btn').addClass('search-focus')
+      // $('.search-result').show()
+      this.isFocus = true
+    },
+    inputBlur: function(){
+      // $('.search-text,.search-btn').removeClass('search-focus')
+      // $('.search-result').hide()
+      this.isFocus = false
+    },
+    searchEnter: function(){
+      this.isEnter = true
+    },
+    searchLeave: function(){
+      this.isEnter = false
+    }
+  }
 }
 </script>
 
@@ -59,6 +107,7 @@ export default {
     >.gif{
       width: 163px;
       height: 66px;
+      margin-left: 20px;
       background: url(../assets/win.gif) no-repeat;
     }
     >.header-nav{
@@ -80,6 +129,7 @@ export default {
       }
     }
     >.header-search{
+      position: relative;
       form{
         height: 50px;
         display: flex;
@@ -95,9 +145,12 @@ export default {
           outline: 0;
           transition: all .2s;
         }
+        .search-enter{
+        border-color: #333;
+        }
         .search-btn{
           width: 52px;
-          height: 50px;
+          height: 48px;
           border: 1px solid #e0e0e0;
           font-size: 24px;
           line-height: 24px;
@@ -106,6 +159,55 @@ export default {
           outline: 0;
           transition: all .2s;
           cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          >.icon{
+            background: url(../assets/icon-search.png)  no-repeat;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-size: 100% 100%;
+            transition: all 0.2s;
+          }
+          &:hover{
+            background: #ff6700;
+            >.icon{
+              background: url(../assets/icon-search-white.png)  no-repeat;
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              background-size: 100% 100%;
+            }
+          }
+        }
+        .search-enter{
+        border-color: #b0b0b0;
+        }
+        .search-focus{
+          border-color: #ff6700;
+        }
+      }
+      .search-result{
+        position: absolute;
+        box-sizing: border-box;
+        top: 50px;
+        width: 224px;
+        border: 1px solid #ff6700;
+        border-top: 0;
+        li{
+          padding: 7px 13px;
+          color: #424242;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .item-num{
+            color: #b0b0b0;
+          }
+          &:hover{
+            color: #ff6700;
+          }
         }
       }
     }
