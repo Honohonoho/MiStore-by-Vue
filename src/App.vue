@@ -2,6 +2,7 @@
   <div id="app">
     <topBar></topBar>
     <topHeader></topHeader>
+    <mainPage></mainPage>
   </div>
 </template>
 
@@ -10,11 +11,13 @@ import 'normalize.css/normalize.css'
 import './assets/reset.css'
 import TopBar from './components/TopBar'
 import TopHeader from './components/TopHeader'
+import MainPage from './components/MainPage'
 
 export default {
   components: {
     'topBar': TopBar,
-    'topHeader': TopHeader
+    'topHeader': TopHeader,
+    'mainPage': MainPage
   }
 }
 </script>

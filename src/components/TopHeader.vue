@@ -141,13 +141,9 @@ export default {
   },
   methods: {
     inputFocus: function(){
-      // $('.search-text,.search-btn').addClass('search-focus')
-      // $('.search-result').show()
       this.isFocus = true
     },
     inputBlur: function(){
-      // $('.search-text,.search-btn').removeClass('search-focus')
-      // $('.search-result').hide()
       this.isFocus = false
     },
     searchEnter: function(){
@@ -156,12 +152,12 @@ export default {
     searchLeave: function(){
       this.isEnter = false
     },
-    navEnter: function(){
-      this.isNavEnter = true
-    },
-    navLeave: function(){
-      this.isNavEnter = false
-    }
+    // navEnter: function(){
+    //   this.isNavEnter = true
+    // },
+    // navLeave: function(){
+    //   this.isNavEnter = false
+    // }
   },
   components: {
     // 'headerMenu': HeaderMenu
@@ -205,7 +201,6 @@ export default {
           line-height: 66px;
           padding: 0 10px;
           font-size: 16px;
-          color: #333;
           &:hover{
             color: #ff6700;
           }
