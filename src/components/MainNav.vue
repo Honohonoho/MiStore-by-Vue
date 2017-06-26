@@ -93,54 +93,58 @@ export default {
           {title: '米家IH电饭煲', imgUrl: './static/img/dfb.jpg', link: 'https://www.mi.com/dianfanbao2/'}
         ],
         charger: [
-          {title: '小米路由器 HD/Pro', imgUrl: './static/img/HD-Pro.png', link: 'https://www.mi.com/miwifihd/'},
-          {title: '小米路由器 3G', imgUrl: './static/img/3G.png', link: 'https://www.mi.com/miwifi3g/'},
-          {title: '小米路由器 3', imgUrl: './static/img/xmlyq3.png', link: 'https://www.mi.com/miwifi3/'},
-          {title: '小米路由器 3C', imgUrl: './static/img/3C.png', link: 'https://www.mi.com/miwifi3c/'},
-          {title: '小米WiFi电力猫', imgUrl: './static/img/cilimao.png', link: 'https://www.mi.com/plc/'},
-          {title: '小米WiFi放大器 2', imgUrl: './static/img/fdq2.jpg', link: 'https://item.mi.com/1164700010.html'},
-          {title: '小米体脂秤', imgUrl: './static/img/tzc.jpg', link: 'https://www.mi.com/scale2/'},
-          {title: '小米手环2', imgUrl: './static/img/sh2.png', link: 'https://www.mi.com/shouhuan2/'},
-          {title: '小米净水器', imgUrl: './static/img/jsqcs.png', link: 'https://www.mi.com/water3/'},
-          {title: '小米VR眼镜 PLAY2', imgUrl: './static/img/xmvrplay2.png', link: 'https://www.mi.com/mivr2c/'},
-          {title: '米家IH电饭煲', imgUrl: './static/img/dfb.jpg', link: 'https://www.mi.com/dianfanbao2/'}
+          {title: '小米移动电源', imgUrl: './static/img/dianyuan.jpg', link: 'https://www.mi.com/dianyuan/'},
+          {title: '插线板', imgUrl: './static/img/c1xb.jpg', link: 'https://list.mi.com/125'},
+          {title: '品牌移动电源', imgUrl: './static/img/yidongdianyuan.jpg', link: 'https://list.mi.com/13'},
+          {title: '移动电源附件', imgUrl: './static/img/dianyuanfujian.jpg', link: 'https://list.mi.com/dyfj'},
+          {title: '充电器', imgUrl: './static/img/chongdianqi.jpg', link: 'https://list.mi.com/15'},
+          {title: '彩虹5号电池', imgUrl: './static/img/5Battery.jpg', link: 'https://item.mi.com/1154300033.html'},
+          {title: '彩虹7号电池', imgUrl: './static/img/7Battery.jpg', link: 'https://item.mi.com/1155000010.html'},
         ],
         earphone: [
-          {title: '小米路由器 HD/Pro', imgUrl: './static/img/HD-Pro.png', link: 'https://www.mi.com/miwifihd/'},
-          {title: '小米路由器 3G', imgUrl: './static/img/3G.png', link: 'https://www.mi.com/miwifi3g/'},
-          {title: '小米路由器 3', imgUrl: './static/img/xmlyq3.png', link: 'https://www.mi.com/miwifi3/'},
-          {title: '小米路由器 3C', imgUrl: './static/img/3C.png', link: 'https://www.mi.com/miwifi3c/'},
-          {title: '小米WiFi电力猫', imgUrl: './static/img/cilimao.png', link: 'https://www.mi.com/plc/'},
-          {title: '小米WiFi放大器 2', imgUrl: './static/img/fdq2.jpg', link: 'https://item.mi.com/1164700010.html'},
-          {title: '小米体脂秤', imgUrl: './static/img/tzc.jpg', link: 'https://www.mi.com/scale2/'},
-          {title: '小米手环2', imgUrl: './static/img/sh2.png', link: 'https://www.mi.com/shouhuan2/'},
-          {title: '小米净水器', imgUrl: './static/img/jsqcs.png', link: 'https://www.mi.com/water3/'},
-          {title: '小米VR眼镜 PLAY2', imgUrl: './static/img/xmvrplay2.png', link: 'https://www.mi.com/mivr2c/'},
-          {title: '米家IH电饭煲', imgUrl: './static/img/dfb.jpg', link: 'https://www.mi.com/dianfanbao2/'}
+          {title: '小米头戴式耳机', imgUrl: './static/img/toudai.jpg', link: 'https://www.mi.com/miwifihd/'},
+          {title: '头戴式耳机轻松版', imgUrl: './static/img/toudai.jpg', link: 'https://www.mi.com/miwifi3g/'},
+          {title: '小米降噪耳机', imgUrl: './static/img/xmjzej.jpg', link: 'https://www.mi.com/miwifi3/'},
+          {title: '小米圈铁耳机 Pro', imgUrl: './static/img/xmjzej.jpg', link: 'https://www.mi.com/miwifi3c/'},
+          {title: '小米圈铁耳机', imgUrl: './static/img/xmjzej.jpg', link: 'https://www.mi.com/plc/'},
+          {title: '小米胶囊耳机', imgUrl: './static/img/xmjzej.jpg', link: 'https://item.mi.com/1164700010.html'},
+          {title: '小米活塞耳机清新版', imgUrl: './static/img/xmjzej.jpg', link: 'https://www.mi.com/scale2/'},
+          {title: '小米蓝牙耳机', imgUrl: './static/img/xmjzej.jpg', link: 'https://www.mi.com/shouhuan2/'},
+          {title: '小米运动蓝牙耳机', imgUrl: './static/img/xmjzej.jpg', link: 'https://www.mi.com/water3/'},
+          {title: '品牌耳机', imgUrl: './static/img/toudai.jpg', link: 'https://www.mi.com/mivr2c/'},
+          {title: '小米网络音响', imgUrl: './static/img/wlyx.jpg', link: 'https://www.mi.com/dianfanbao2/'},
+          {title: '小米蓝牙音箱', imgUrl: './static/img/wlyx.jpg', link: 'https://www.mi.com/dianfanbao2/'},
+          {title: '小米随身蓝牙音箱', imgUrl: './static/img/wlyx.jpg', link: 'https://www.mi.com/dianfanbao2/'},
+          {title: '小钢炮音箱 2', imgUrl: './static/img/wlyx.jpg', link: 'https://www.mi.com/dianfanbao2/'},
+          {title: '小米方盒子蓝牙音箱2', imgUrl: './static/img/wlyx.jpg', link: 'https://www.mi.com/dianfanbao2/'},
+          {title: '小米方盒子蓝牙音箱', imgUrl: './static/img/wlyx.jpg', link: 'https://www.mi.com/dianfanbao2/'},
+          {title: '小米音乐闹钟', imgUrl: './static/img/naozhong.jpg', link: 'https://www.mi.com/dianfanbao2/'},
+          {title: '小米米兔音箱', imgUrl: './static/img/naozhong.jpg', link: 'https://www.mi.com/dianfanbao2/'},
+          {title: '音乐蓝牙车充', imgUrl: './static/img/naozhong.jpg', link: 'https://www.mi.com/dianfanbao2/'}
         ],
         protect: [
           {title: '贴膜', imgUrl: './static/img/tiemo.jpg', link: 'https://list.mi.com/9'},
           {title: '保护套/保护壳', imgUrl: './static/img/baohu.jpg', link: 'https://list.mi.com/8'}
         ],
         card: [
-          {title: '小米路由器 HD/Pro', imgUrl: './static/img/HD-Pro.png', link: 'https://www.mi.com/miwifihd/'},
-          {title: '小米路由器 3G', imgUrl: './static/img/3G.png', link: 'https://www.mi.com/miwifi3g/'},
-          {title: '小米路由器 3', imgUrl: './static/img/xmlyq3.png', link: 'https://www.mi.com/miwifi3/'},
-          {title: '小米路由器 3C', imgUrl: './static/img/3C.png', link: 'https://www.mi.com/miwifi3c/'}
+          {title: '线材', imgUrl: './static/img/xiancai.jpg', link: 'https://list.mi.com/16'},
+          {title: '自拍杆', imgUrl: './static/img/zipaigan.jpg', link: 'https://search.mi.com/search_%E8%87%AA%E6%8B%8D%E6%9D%86'},
+          {title: '手机支架', imgUrl: './static/img/zhijia.jpg', link: 'https://list.mi.com/5'},
+          {title: '存储卡', imgUrl: './static/img/cunchu.jpg', link: 'https://list.mi.com/27'}
         ],
         bag: [
-          {title: '小米路由器 HD/Pro', imgUrl: './static/img/HD-Pro.png', link: 'https://www.mi.com/miwifihd/'},
-          {title: '小米路由器 3G', imgUrl: './static/img/3G.png', link: 'https://www.mi.com/miwifi3g/'},
-          {title: '小米路由器 3', imgUrl: './static/img/xmlyq3.png', link: 'https://www.mi.com/miwifi3/'},
-          {title: '小米路由器 3C', imgUrl: './static/img/3C.png', link: 'https://www.mi.com/miwifi3c/'},
-          {title: '小米WiFi电力猫', imgUrl: './static/img/cilimao.png', link: 'https://www.mi.com/plc/'}
+          {title: '箱包', imgUrl: './static/img/xiangbao.jpg', link: 'https://list.mi.com/23'},
+          {title: '90分旅行箱', imgUrl: './static/img/lvxingxiang.jpg', link: 'https://search.mi.com/search_%E6%97%85%E8%A1%8C%E7%AE%B1'},
+          {title: '服饰', imgUrl: './static/img/huise.jpg', link: 'https://list.mi.com/22'},
+          {title: '米家运动鞋 智能版', imgUrl: './static/img/ydx.jpg', link: 'https://search.mi.com/search_%E8%BF%90%E5%8A%A8%E9%9E%8B'},
+          {title: 'TS 尼龙偏光太阳镜', imgUrl: './static/img/tyj.jpg', link: 'https://www.mi.com/ts-sunglasses/'}
         ],
         live: [
-          {title: '小米路由器 HD/Pro', imgUrl: './static/img/HD-Pro.png', link: 'https://www.mi.com/miwifihd/'},
-          {title: '小米路由器 3G', imgUrl: './static/img/3G.png', link: 'https://www.mi.com/miwifi3g/'},
-          {title: '小米路由器 3', imgUrl: './static/img/xmlyq3.png', link: 'https://www.mi.com/miwifi3/'},
-          {title: '小米路由器 3C', imgUrl: './static/img/3C.png', link: 'https://www.mi.com/miwifi3c/'},
-          {title: '小米WiFi电力猫', imgUrl: './static/img/cilimao.png', link: 'https://www.mi.com/plc/'}
+          {title: '米兔玩偶', imgUrl: './static/img/mitu.jpg', link: 'http://mitu.mi.com/'},
+          {title: '生活周边', imgUrl: './static/img/zhoubian.jpg', link: 'https://list.mi.com/24'},
+          {title: '《小米》会刊', imgUrl: './static/img/zazhi.jpg', link: 'https://www.mi.com/zazhi/index.html?1021'},
+          {title: '毛巾/浴巾', imgUrl: './static/img/mj.jpg', link: 'https://search.mi.com/search_%E6%9C%80%E7%94%9F%E6%B4%BB'},
+          {title: '8H乳胶床品', imgUrl: './static/img/rjcd.jpg', link: 'https://search.mi.com/search_%E4%B9%B3%E8%83%B6'}
         ]
       }
     }
@@ -193,6 +197,7 @@ export default {
     right: 0;
     background: #fff;
     z-index: 5;
+    overflow: hidden;
     ul{
       height: 458px;
       border: 1px solid #e0e0e0;
