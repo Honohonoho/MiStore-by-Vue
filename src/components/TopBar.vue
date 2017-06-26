@@ -142,6 +142,7 @@ export default {
       >.cart-detail{
         position: absolute;
         overflow: hidden;
+        z-index: 3;
         left: 120px;
         transform: translate(-100%,0);
         top: 40px;
@@ -149,6 +150,7 @@ export default {
         line-height: 96px;
         padding: 0 15px;
         color: #424242;
+        background: #fff;
         box-shadow: 0 2px 10px rgba(0,0,0,0.15);
       }
     }

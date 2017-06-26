@@ -15,7 +15,7 @@ import MainCarousel from './MainCarousel'
 export default {
   components: {
     'mainNav': MainNav,
-    'mainCarouel': MainCarousel
+    'mainCarousel': MainCarousel
   }
 }
 </script>

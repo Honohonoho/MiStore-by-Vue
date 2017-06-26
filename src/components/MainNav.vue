@@ -2,7 +2,7 @@
   <div class="main-nav">
     <div class="nav-first" @mouseenter="isNavEnter = true" @mouseleave="isNavEnter = false">
       <ul>
-        <li v-for="item in navFirst"
+        <li v-for="(item,index) in navFirst" :key="index"
             :class="{active: item.type === selected}"
             @mouseenter="selected = item.type">
           <p>
@@ -15,8 +15,8 @@
     <div class="nav-sec" v-show="isNavEnter || isMenuEnter"
         @mouseenter="isMenuEnter = true" @mouseleave="isMenuEnter = false"
     >
-      <ul v-for="item in navFirst" v-show="item.type === selected">
-        <li v-for="key in navSec[item.type]">
+      <ul v-for="(item,index) in navFirst" v-show="item.type === selected" :key="index">
+        <li v-for="(key,index) in navSec[item.type]"  :key="index">
           <div class="product">
             <a :href="key.link">
               <img :src="key.imgUrl" alt="">
@@ -119,8 +119,8 @@ export default {
           {title: '米家IH电饭煲', imgUrl: './static/img/dfb.jpg', link: 'https://www.mi.com/dianfanbao2/'}
         ],
         protect: [
-          {title: '小米路由器 HD/Pro', imgUrl: './static/img/HD-Pro.png', link: 'https://www.mi.com/miwifihd/'},
-          {title: '小米路由器 3G', imgUrl: './static/img/3G.png', link: 'https://www.mi.com/miwifi3g/'}
+          {title: '贴膜', imgUrl: './static/img/tiemo.jpg', link: 'https://list.mi.com/9'},
+          {title: '保护套/保护壳', imgUrl: './static/img/baohu.jpg', link: 'https://list.mi.com/8'}
         ],
         card: [
           {title: '小米路由器 HD/Pro', imgUrl: './static/img/HD-Pro.png', link: 'https://www.mi.com/miwifihd/'},
@@ -151,11 +151,14 @@ export default {
 <style lang="scss" scoped>
 .main-nav{
   font-size: 14px;
+  position: relative;
   display: flex;
   justify-content: flex-start;
   >.nav-first{
     width: 235px;
   	height: 458px;
+    position: relative;
+    z-index: 5;
     ul{
       display: flex;
       justify-content: space-between;
@@ -183,28 +186,42 @@ export default {
     }
   }
   .nav-sec{
-    position: relative;
-    width: 795px;
     height: 458px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+    width: 992px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 5;
     ul{
-      position: absolute;
-      left: 0;
-      top: 0;
+      height: 458px;
+      border: 1px solid #e0e0e0;
+      border-left: none;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.18);
       display: flex;
       flex-flow: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: flex-start;
       justify-content: flex-start;
       li{
         width: 265px;
         height: 76px;
         .product{
-          display: flex;
-          justify-content: flex-start;
           a{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            transition: color .2s;
+            width: 265px;
+            padding: 20px 20px;
+            &:hover{
+              color: #ff6700;
+            }
             img{
               width: 40px;
               height: 40px;
+              margin-right: 12px;
             }
           }
         }

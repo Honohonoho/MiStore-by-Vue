@@ -5,7 +5,7 @@
       <a class="gif"></a>
       <div class="header-nav" @mouseenter="isNavEnter = true" @mouseleave="isNavEnter = false">
         <ul>
-          <li class="item" v-for="item in navItems"
+          <li class="item" v-for="(item,index) in navItems" :key="index"
               :class="{active: item.type === selected}"
               @mouseenter="selected = item.type">
             <a href="#">{{item.name}}</a>
@@ -27,7 +27,7 @@
           </label>
         </form>
         <ul class="search-result" v-show="isFocus">
-          <li v-for="item in results">
+          <li v-for="(item,index) in results"  :key="index">
             <span class="item-name">{{item.name}}</span>
             <span class="item-num">约有{{item.number}}件</span>
           </li>
@@ -35,8 +35,8 @@
       </div>
     </div>
     <div class="header-menu" v-show="(selected !== '') && (isNavEnter || isMenuEnter)" @mouseenter="isMenuEnter = true" @mouseleave="isMenuEnter = false">
-      <ul v-for="item in navItems" v-show="item.type === selected">
-        <li v-for="key in tabItems[item.type]">
+      <ul v-for="(item,index) in navItems" v-show="item.type === selected"  :key="index">
+        <li v-for="(key,index) in tabItems[item.type]"  :key="index">
           <div class="product">
             <p class="info" >{{key.info}}</p>
             <a :href="key.link"><img :src="key.imgUrl" alt=""></a>
@@ -309,7 +309,7 @@ export default {
   left: 0;
   width: 1226px;
   height: 230px;
-  overflow: hidden;
+  z-index: 3;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
@@ -319,6 +319,7 @@ export default {
     left: 0;
     right: 0;
     display: flex;
+    z-index: 3;
     justify-content: flex-start;
     >li{
       width: 160px;

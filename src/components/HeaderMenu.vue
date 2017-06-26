@@ -79,7 +79,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .header-menu{
   position: absolute;
   bottom: 0;
@@ -88,6 +88,8 @@ export default {
   transform: translate(0,100%);
   height: 230px;
   overflow: hidden;
+  z-index: 3;
+  background-color: white;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
@@ -96,6 +98,8 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 3;
+    background: white;
     display: flex;
     justify-content: flex-start;
     >li{
