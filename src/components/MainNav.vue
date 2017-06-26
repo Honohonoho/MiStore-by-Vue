@@ -13,8 +13,7 @@
       </ul>
     </div>
     <div class="nav-sec" v-show="isNavEnter || isMenuEnter"
-        @mouseenter="isMenuEnter = true" @mouseleave="isMenuEnter = false"
-    >
+        @mouseenter="isMenuEnter = true" @mouseleave="isMenuEnter = false">
       <ul v-for="(item,index) in navFirst" v-show="item.type === selected" :key="index">
         <li v-for="(key,index) in navSec[item.type]"  :key="index">
           <div class="product">
@@ -26,12 +25,17 @@
         </li>
       </ul>
     </div>
-
+    <mainRecommend></mainRecommend>
   </div>
 </template>
 
 <script>
+import MainRecommend from './MainRecommend'
+
 export default {
+  components: {
+    'mainRecommend': MainRecommend
+  },
   data(){
     return {
       selected: '',
