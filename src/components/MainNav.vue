@@ -198,11 +198,11 @@ export default {
     background: #fff;
     z-index: 5;
     overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
     ul{
       height: 458px;
-      border: 1px solid #e0e0e0;
-      border-left: none;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.18);
       display: flex;
       flex-flow: wrap;
       flex-direction: column;
