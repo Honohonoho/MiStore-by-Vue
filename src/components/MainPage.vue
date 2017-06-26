@@ -3,6 +3,7 @@
     <div class="main-top">
       <mainNav></mainNav>
       <mainCarousel></mainCarousel>
+      <mainRecommend></mainRecommend>
     </div>
     
   </div>
@@ -11,11 +12,13 @@
 <script>
 import MainNav from './MainNav'
 import MainCarousel from './MainCarousel'
+import MainRecommend from './MainRecommend'
 
 export default {
   components: {
     'mainNav': MainNav,
-    'mainCarousel': MainCarousel
+    'mainCarousel': MainCarousel,
+    'mainRecommend': MainRecommend
   }
 }
 </script>

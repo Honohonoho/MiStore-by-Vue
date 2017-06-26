@@ -31,6 +31,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.main-recommend{
+  width: 1226px;
+  height: 170px;
+  margin-top: 14px;
+}
 </style>
 

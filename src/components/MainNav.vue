@@ -25,17 +25,12 @@
         </li>
       </ul>
     </div>
-    <mainRecommend></mainRecommend>
   </div>
 </template>
 
 <script>
-import MainRecommend from './MainRecommend'
 
 export default {
-  components: {
-    'mainRecommend': MainRecommend
-  },
   data(){
     return {
       selected: '',
