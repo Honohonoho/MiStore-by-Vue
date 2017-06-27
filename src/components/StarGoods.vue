@@ -55,6 +55,11 @@ export default {
       justify-content: center;
       align-items: center;
       text-align: center;
+      transition: all .2s linear;
+      &:hover{
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        margin-top: -1px;
+      }
       &:nth-child(1){
         border-top: 1px solid #ffac13;
       }
