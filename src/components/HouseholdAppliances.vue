@@ -20,10 +20,12 @@
           <p class="title">{{item.title}}</p>
           <p class="text">{{item.text}}</p>
           <p class="price">{{item.price}}</p>
-          <div class="commit">
-            <p class="text"></p>
-            <p class="source"></p>
-          </div>
+          <transition-group name="commit-slide" class="commit-slide" tag="div">
+            <div class="commit" v-if="selected === index" :key="index">
+              <p class="text">{{commits.text}}</p>
+              <p class="source">{{commits.source}}</p>
+            </div>
+          </transition-group>
         </div>
         <div class="h-a-item item-exrta">
           <div class="item">
@@ -68,9 +70,7 @@ export default {
         {title: '米家压力IH电饭煲', text: '智能烹饪，灰铸铁粉体涂层内胆', price: '999元', imgUrl: './static/img/h-a-r-6.jpg', link: 'https://www.mi.com/dianfanbao/'},
         {title: 'Yeelight LED 吸顶灯', text: '5分钟快装，月光夜灯，IP60 级防尘', price: '359元', imgUrl: './static/img/h-a-r-7.png', link: 'https://www.mi.com/yeelight-ceilinglamp/'}
       ],
-      commits: [
-        {text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...', source: '来自于 翔 的评价'}
-      ]
+      commits: {text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...', source: '来自于 翔 的评价'}
     }
   }
 }
@@ -112,6 +112,8 @@ export default {
         transition: all .2s linear;
       }
       .h-a-item{
+        position: relative;
+        overflow: hidden;
         height: 300px;
         width: 234px;
         margin-left: 14px;
@@ -137,6 +139,29 @@ export default {
         .price{
           color: #ff6709;
           font-size: 14px;
+        }
+        .commit{
+          position: absolute;
+          z-index: 2;
+          // bottom: 0px;
+          left: 0;
+          height: 80px;
+          width: 234px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+          background: #ff6700;
+          transform: translateY(-50%);
+          .text{
+            color: #fff;
+            width: 174px;
+          }
+          .source{
+            color: rgba(255,255,255,0.6);
+            width: 174px;
+          }
         }
       }
       .item-exrta{
@@ -190,6 +215,17 @@ export default {
       }
     }
   }
+}
+//commit-slide动画
+.commit-slide-enter-active,.commit-slide-leave-active{
+  transition: all .2s linear;
+  bottom: -40px;
+  opacity: 1;
+}
+.commit-slide-enter,.commit-slide-leave-to/* .fade-leave-active in <2.1.8 */ {
+  bottom: -80px;
+  opacity: 0;
+  transition: all .2s linear;
 }
 </style>
 
