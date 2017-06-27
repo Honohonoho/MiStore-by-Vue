@@ -34,7 +34,6 @@ export default {
 .star-goods{
   width: 1226px;
   margin-top: 26px; 
-  margin-bottom: 40px;
   h2{
     font-size: 22px;
     font-weight: 200;
