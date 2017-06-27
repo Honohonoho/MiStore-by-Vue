@@ -66,11 +66,15 @@ export default {
 
 <style lang="scss">
 .main-page{
-  width: 1226px;
-  margin: 0 auto;
   >.main-top{
     width: 1226px;
+    margin: 0 auto;
+    background: #fff;
     position: relative;
+  }
+  .main-page{
+    background: #f5f5f5;
+    margin: 0 auto;
   }
 }
 </style>

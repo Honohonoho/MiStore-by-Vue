@@ -72,6 +72,7 @@ export default {
     left: 0;
     top: 0;
     width: 1226px;
+    background: #fff;
     height: 460px;
     z-index: 1;
     .container{

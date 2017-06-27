@@ -154,6 +154,9 @@ export default {
 <style lang="scss" scoped>
 .main-nav{
   font-size: 14px;
+  width: 1226px;
+  background: #fff;
+  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: flex-start;

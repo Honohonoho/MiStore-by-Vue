@@ -79,6 +79,7 @@ export default {
 <style lang="scss">
 .household-appliances{
   width: 1226px;
+  margin: 0 auto;
   background: #f5f5f5;
   padding-top: 60px;
   h2{
@@ -166,12 +167,12 @@ export default {
       }
       .item-exrta{
         background: #f5f5f5;
-        justify-content: space-around;
+        justify-content: space-between;
+        overflow: visible;
         .item{
           height: 143px;
           width: 234px;
           background: #fff;
-          margin-bottom: 14px;
           display: flex;
           justify-content: space-around;
           align-items: center;
@@ -188,7 +189,7 @@ export default {
               display: flex;
               flex-direction: column;
               justify-content: center;
-
+              text-align: left;
               .title{
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -205,6 +206,7 @@ export default {
         .more>a>img{
           width: 62px;
           height: 60px;
+          margin-left: 20px;
         }
         .more .title{
           font-size: 18px;

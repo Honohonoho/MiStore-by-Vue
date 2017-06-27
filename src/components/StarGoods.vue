@@ -33,6 +33,7 @@ export default {
 <style lang="scss">
 .star-goods{
   width: 1226px;
+  margin: 0 auto;
   margin-top: 26px; 
   h2{
     font-size: 22px;

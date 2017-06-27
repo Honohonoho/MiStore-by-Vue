@@ -39,6 +39,8 @@ export default {
 <style lang="scss" scoped>
 .main-recommend{
   width: 1226px;
+  background: #fff;
+  margin: 0 auto;
   height: 170px;
   margin-top: 14px;
   display: flex;
