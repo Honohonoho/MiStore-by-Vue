@@ -23,9 +23,9 @@
       <!--热评产品-->
       <hotGoods></hotGoods>
       <!--内容-->
-      <content></content>
+      <miContent></miContent>
       <!--视频-->
-      <video></video>
+      <miVideo></miVideo>
     </div>
   </div>
 </template>
@@ -42,8 +42,8 @@ import Parts from './Parts'
 import RelatedProducts from './RelatedProducts'
 import Recommend from './Recommend'
 import HotGoods from './HotGoods'
-import Content from './Content'
-import Video from './Video'
+import MiContent from './MiContent'
+import MiVideo from './MiVideo'
 
 export default {
   components: {
@@ -58,8 +58,8 @@ export default {
     'relatedProducts': RelatedProducts,
     'recommend': Recommend,
     'hotGoods': HotGoods,
-    'content': Content,
-    'video': Video
+    'miContent': MiContent,
+    'miVideo': MiVideo
   }
 }
 </script>
