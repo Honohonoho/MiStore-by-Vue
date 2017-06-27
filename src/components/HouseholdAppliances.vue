@@ -2,13 +2,18 @@
   <div class="household-appliances">
     <h2>家电</h2>
     <div class="h-a-container">
-      <div class="wrapper-left">
-        <a>
+      <div class="wrapper-left" :class="{ active: isMouseEnter}"
+          @mouseenter="isMouseEnter = true" @mouseleave="isMouseEnter = false"
+        >
+        <a href="https://www.mi.com/water3/">
           <img :src="pic_1">
         </a>
       </div>
       <div class="wrapper-right">
-        <div class="h-a-item" v-for="(item,index) in Items" :key="index">
+        <div class="h-a-item" v-for="(item,index) in Items" :key="index"
+            :class="{active: index === selected}"
+            @mouseenter="selected = index" @mouseleave="selected = ''"
+          >
           <a :href="item.link">
             <img :src="item.imgUrl">
           </a>
@@ -49,6 +54,8 @@
 export default {
   data(){
     return{
+      isMouseEnter: false,
+      selected: '',
       pic_1: './static/img/h-a-left.jpg',
       pic_2: './static/img/h-a-r-8.jpg',
       pic_3: './static/img/right.png',
@@ -83,6 +90,11 @@ export default {
   .h-a-container{
     display: flex;
     justify-content: space-between;
+    >.active{
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      margin-top: -1px;
+      transition: all .2s linear;
+    }
     .wrapper-left{
       height: 614px;
       width: 234px;
@@ -94,6 +106,11 @@ export default {
       flex-flow: wrap;
       justify-content: center;
       align-content: space-between;
+      .active{
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        margin-top: -1px;
+        transition: all .2s linear;
+      }
       .h-a-item{
         height: 300px;
         width: 234px;
@@ -133,6 +150,11 @@ export default {
           display: flex;
           justify-content: space-around;
           align-items: center;
+          transition: all .2s linear;
+          &:hover{
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            margin-top: -1px;
+          }
           a{
             width: 234px;
             display: flex;
