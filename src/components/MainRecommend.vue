@@ -8,14 +8,8 @@
         </a>
       </div>
     </div>
-    <div class="rec-1">
-      <a><img alt=""></a>
-    </div>
-    <div class="rec-2">
-      <a><img alt=""></a>
-    </div>
-    <div class="rec-3">
-      <a><img alt=""></a>
+    <div class="rec-item" v-for="(item,index) in recommend" :key="index">
+      <a :href="item.link"><img :src="item.imgUrl" alt=""></a>
     </div>
   </div>
 </template>
@@ -31,6 +25,11 @@ export default {
         {title: '小米移动', imgUrl: './static/img/sim.png', link: 'https://www.mi.com/mimobile/'},
         {title: '以旧换新', imgUrl: './static/img/renew.png', link: 'https://huanxin.mi.com/'},
         {title: '话费充值', imgUrl: './static/img/chongzhi.png', link: 'http://recharge.10046.mi.com/'}
+      ],
+      recommend: [
+        {imgUrl: './static/img/xmad_1.jpg', link: 'https://item.mi.com/product/10000024.html'},
+        {imgUrl: './static/img/xmad_2.jpg', link: 'https://item.mi.com/buyphone/redminote4x'},
+        {imgUrl: './static/img/xmad_3.jpg', link: 'https://www.mi.com/dianfanbao2-4l/'}
       ]
     }
   }
@@ -75,6 +74,18 @@ export default {
           margin-bottom: 10px;
         }
       }
+    }
+  }
+  .rec-item{
+    width: 316px;
+    height: 170px;
+    transition: box-shadow .2s linear;
+    a>img{
+      width: 316px;
+      height: 170px;
+    }
+    &:hover{
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     }
   }
 }
