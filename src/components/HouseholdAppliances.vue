@@ -145,7 +145,7 @@ export default {
           z-index: 2;
           // bottom: 0px;
           left: 0;
-          height: 80px;
+          height: 90px;
           width: 234px;
           display: flex;
           flex-direction: column;
@@ -219,11 +219,11 @@ export default {
 //commit-slide动画
 .commit-slide-enter-active,.commit-slide-leave-active{
   transition: all .2s linear;
-  bottom: -40px;
+  bottom: -50px;
   opacity: 1;
 }
 .commit-slide-enter,.commit-slide-leave-to/* .fade-leave-active in <2.1.8 */ {
-  bottom: -80px;
+  bottom: -90px;
   opacity: 0;
   transition: all .2s linear;
 }
