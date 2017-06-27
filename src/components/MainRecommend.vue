@@ -1,10 +1,10 @@
 <template>
   <div class="main-recommend">
     <div class="activities">
-      <div class="item" v-for="n in 6" :key="n">
-        <a>
-          <span class="icon"></span>
-          <span class="text"></span>
+      <div class="item" v-for="(item,index) in activities" :key="index">
+        <a :href="item.link">
+          <img class="icon" :src="item.imgUrl" alt="">
+          <span class="text">{{item.title}}</span>
         </a>
       </div>
     </div>
@@ -22,11 +22,18 @@
 
 <script>
 export default {
-  // data(){
-  //   retun {
-
-  //   }
-  // }
+  data(){
+    return {
+      activities: [
+        {title: '选购手机', imgUrl: './static/img/buyphone.png', link: 'https://www.mi.com/compare/'},
+        {title: '企业团购', imgUrl: './static/img/gift.png', link: 'http://qiye.mi.com/'},
+        {title: '一元活动', imgUrl: './static/img/one.png', link: 'https://1.hd.mi.com/'},
+        {title: '小米移动', imgUrl: './static/img/sim.png', link: 'https://www.mi.com/mimobile/'},
+        {title: '以旧换新', imgUrl: './static/img/renew.png', link: 'https://huanxin.mi.com/'},
+        {title: '话费充值', imgUrl: './static/img/chongzhi.png', link: 'http://recharge.10046.mi.com/'}
+      ]
+    }
+  }
 }
 </script>
 
@@ -35,6 +42,41 @@ export default {
   width: 1226px;
   height: 170px;
   margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  .activities{
+    width: 234px;
+    height: 170px;
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    background: #5f5750;
+    .item{
+      width: 70px;
+      height: 70px;
+      padding: 6px 3px;
+      border: 1px solid #665e57;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(255,255,255,0.7);
+        cursor: pointer;
+        &:hover{
+          color: rgba(255,255,255,1);
+        }
+        .icon{
+          height: 32px;
+          width: 32px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }
 </style>
 
