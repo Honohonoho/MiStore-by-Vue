@@ -176,6 +176,8 @@ export default {
           .text{
             color: #fff;
             width: 174px;
+            margin-top: 10px;
+            margin-bottom: 15px;
           }
           .source{
             color: rgba(255,255,255,0.6);
@@ -213,6 +215,9 @@ export default {
                 white-space: nowrap;
                 overflow: hidden;
                 margin-bottom: 14px;
+              }
+              .price{
+                margin: 0;
               }
             }
             img{
