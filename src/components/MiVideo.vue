@@ -43,6 +43,7 @@ export default {
   margin: 0 auto;
   background: #f5f5f5;
   padding-top: 60px;
+  padding-bottom: 60px;
   h2{
     font-size: 22px;
     font-weight: 200;
@@ -62,7 +63,6 @@ export default {
         transition: all .2s linear;
       }
       .item{
-        overflow: hidden;
         width: 296px;
         height: 285px;
         background: #fff;

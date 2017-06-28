@@ -1,5 +1,5 @@
 <template>
-  <div class="main-page">
+  <div class="main">
     <div class="main-top">
       <mainNav></mainNav>
       <mainCarousel></mainCarousel>
@@ -65,7 +65,7 @@ export default {
 </script>
 
 <style lang="scss">
-.main-page{
+.main{
   >.main-top{
     width: 1226px;
     margin: 0 auto;

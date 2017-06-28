@@ -3,6 +3,7 @@
     <topBar></topBar>
     <topHeader></topHeader>
     <mainPage></mainPage>
+    <miFooter></miFooter>
   </div>
 </template>
 
@@ -12,12 +13,14 @@ import './assets/reset.css'
 import TopBar from './components/TopBar'
 import TopHeader from './components/TopHeader'
 import MainPage from './components/MainPage'
+import MiFooter from './components/MiFooter'
 
 export default {
   components: {
     'topBar': TopBar,
     'topHeader': TopHeader,
-    'mainPage': MainPage
+    'mainPage': MainPage,
+    'miFooter': MiFooter
   }
 }
 </script>
