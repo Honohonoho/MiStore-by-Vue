@@ -71,7 +71,7 @@ export default {
       Items: [
         {title: '米家中性笔专用笔芯', text: '1万人评价', price: '6.9元', imgUrl: './static/img/relate-r-1.jpg', link: 'https://item.mi.com/1164600021.html'},
         {title: '花花草草监测仪', text: '6456人评价', price: '49元', imgUrl: './static/img/relate-r-2.jpg', link: 'https://www.mi.com/flowermonitor/'},
-        {title: '米家LED随身灯 增强版', text: '3.5万人评价', price: '19.9元', imgUrl: './static/img/relate-r-2.jpg', link: 'https://item.mi.com/1162800009.html'},
+        {title: '米家LED随身灯 增强版', text: '3.5万人评价', price: '19.9元', imgUrl: './static/img/relate-r-3.jpg', link: 'https://item.mi.com/1162800009.html'},
         {title: '米家随身风扇', text: '1.8万人评价', price: '19.9元', imgUrl: './static/img/relate-r-4.jpg', link: 'https://item.mi.com/1162800007.html'},
         {title: '变形金刚特别版声波', text: '2728人评价', price: '169元', imgUrl: './static/img/relate-r-5.jpg', link: 'https://www.mi.com/transformers/'},
         {title: '金属鼠标垫 小号', text: '1.2万人评价', price: '49元', imgUrl: './static/img/relate-r-6.jpg', link: 'https://item.mi.com/1144600004.html'},
