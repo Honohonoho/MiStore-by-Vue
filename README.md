@@ -8,28 +8,30 @@
 # 使用的技术
 完成这个项目的初衷是为了熟悉Vue.js的语法和常见的API，所以并没有用vue-router或vuex，深入学习之后会考虑吧。。。    
 
-1. **vue-cli**     
+**1. vue-cli**     
 
-之前学习React时用了react-creat-app，所以这次用vue-cli工具，来初始化一个 vue 项目，省去了配置各种文件的烦恼，真是贴心~用法见下↓    
+    之前学习React时用了react-creat-app，所以这次用vue-cli工具，    
+    
+    来初始化一个 vue 项目，省去了配置各种文件的烦恼，真是贴心~用法见下↓    
 
 ``` 
 npm install -g vue-cli  //安装
 vue init webpack .      //初始化
 ```   
 
-2. **webpack**     
+**2. webpack**     
 
-由于 vue-cli 其实也是用了 webpack，所以用起来不会特别陌生。    
+    由于 vue-cli 其实也是用了 webpack，所以用起来不会特别陌生。    
 
-3. **scss**    
+**3. scss**    
 
-之前我写的样式都是 CSS，为了提高效率就加上了 CSS 预处理（别问我为什么不用LESS...）    
+    之前我写的样式都是 CSS，为了提高效率就加上了 CSS 预处理（别问我为什么不用LESS...）    
 
 ```npm install --save  sass-loader node-sass```    
 
-4. **Vue**    
+**4. Vue**    
 
-怎么说呢，请看文章标题。
+    怎么说呢，请看文章标题。
 
 # 目录结构
 ```
