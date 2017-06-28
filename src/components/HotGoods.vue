@@ -121,19 +121,6 @@ export default {
             }
           }
         }
-        // .title{
-        //   font-size: 14px;
-        //   font-weight: 400;
-        // }
-        // .text{
-        //   color: #b0b0b0;
-        // }
-        // .price{
-        //   color: #ff6709;
-        //   font-size: 14px;
-        //   margin-top: 10px;
-        //   margin-bottom: 15px;
-        // }
       }
     }
   }
