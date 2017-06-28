@@ -121,6 +121,7 @@ export default {
     .wrapper-right{
       width: 992px;
       height: 614px;
+      color: #333;
       display: flex;
       flex-flow: wrap;
       justify-content: center;

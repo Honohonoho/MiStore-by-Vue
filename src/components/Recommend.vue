@@ -52,7 +52,6 @@ export default {
     width: 1226px;
     margin: 0 auto;
     .wrapper{
-      height: 614px;
       display: flex;
       justify-content: space-between;
       align-content: space-between;
@@ -66,6 +65,7 @@ export default {
         overflow: hidden;
         height: 300px;
         width: 234px;
+        color: #333;
         background: #fff;
         display: flex;
         flex-direction: column;
