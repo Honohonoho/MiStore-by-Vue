@@ -46,9 +46,6 @@
         </li>
       </ul>
     </div>
-    <!--<transition name="menu-expand" @mouseenter="navEnter" @mouseleave="navLeave"> 
-      <headerMenu v-show="isNavEnter" ></headerMenu>
-    </transition>  -->
   </div>
 </template>
 
@@ -151,16 +148,9 @@ export default {
     },
     searchLeave: function(){
       this.isEnter = false
-    },
-    // navEnter: function(){
-    //   this.isNavEnter = true
-    // },
-    // navLeave: function(){
-    //   this.isNavEnter = false
-    // }
+    }
   },
   components: {
-    // 'headerMenu': HeaderMenu
   }
 }
 </script>
@@ -269,11 +259,13 @@ export default {
       }
       .search-result{
         position: absolute;
+        z-index: 3;
         box-sizing: border-box;
         top: 50px;
         width: 224px;
         border: 1px solid #ff6700;
         border-top: 0;
+        background: #fff;
         li{
           padding: 7px 13px;
           color: #424242;
@@ -292,34 +284,20 @@ export default {
     }
   }
 }
-//HeaderMenu动画
-// .menu-expand-enter-active, .menu-expand-leave-active {
-//   transition: height .3s ease;
-//   height: 230px;
-// }
-// .menu-expand-enter,.menu-expand-leave-to/* .fade-leave-active in <2.1.8 */ {
-//   height: 0;
-//   transition: height .3s ease;
-// }
-
 
 .header-menu{
   position: absolute;
   top: 100px;
   left: 0;
-  width: 1226px;
+  right: 0;
   height: 230px;
-  z-index: 3;
+  z-index: 6;
+  background: #fff;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   >ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
-    z-index: 3;
     justify-content: flex-start;
     >li{
       width: 160px;
